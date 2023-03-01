@@ -8,6 +8,9 @@
 
 
 float getDbVal(float val);
+float dB_to_multiplier(float  dB);
+float multiplier_to_dB(float multiplier);
+
 float getDbPercent(float db);
 float hard_clip(float val, float min, float max);
 float tau(float *x, float *y, unsigned int n);

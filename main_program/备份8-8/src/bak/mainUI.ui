@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="PanelItem" name="mainwindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>723</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="titleText">
+   <string>音频监测</string>
+  </property>
+  <property name="isAlarm" stdset="0">
+   <bool>false</bool>
+  </property>
+  <widget class="GaugeProgress" name="VolumeProgress">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>560</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="showValue">
+    <bool>true</bool>
+   </property>
+   <property name="pointerStyle">
+    <enum>GaugeProgress::PointerStyle_Triangle</enum>
+   </property>
+  </widget>
+  <widget class="CpuMemoryLabel" name="cpuMemorylabel">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>670</y>
+     <width>300</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>691</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gL">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>4</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>2</number>
+    </property>
+    <item row="5" column="3">
+     <layout class="QHBoxLayout" name="group_8"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="NavLabel" name="group_label_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>分类组5</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="NavLabel" name="group_label_8">
+      <property name="text">
+       <string>分类组8</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="NavLabel" name="group_label_3">
+      <property name="text">
+       <string>分类组3</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <layout class="QHBoxLayout" name="group_3"/>
+    </item>
+    <item row="3" column="2">
+     <widget class="NavLabel" name="group_label_7">
+      <property name="text">
+       <string>分类组7</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <layout class="QHBoxLayout" name="group_7"/>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="group_1"/>
+    </item>
+    <item row="1" column="3">
+     <widget class="NavLabel" name="group_label_4">
+      <property name="text">
+       <string>分类组4</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="NavLabel" name="group_label_2">
+      <property name="text">
+       <string>分类组2</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <layout class="QHBoxLayout" name="group_6"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="NavLabel" name="group_label_6">
+      <property name="text">
+       <string>分类组6</string>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="group_5"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="NavLabel" name="group_label_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>分类组1</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="background">
+       <color>
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </property>
+      <property name="arrowPosition">
+       <enum>NavLabel::ArrowPosition_Bottom</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="group_2"/>
+    </item>
+    <item row="2" column="3">
+     <layout class="QHBoxLayout" name="group_4"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="ButtonGroup" name="ChangeGroup">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>40</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="interval">
+    <number>300</number>
+   </property>
+   <property name="lineLen">
+    <number>3</number>
+   </property>
+   <property name="index">
+    <number>0</number>
+   </property>
+   <property name="texts">
+    <string>0-32;32-64;64-128</string>
+   </property>
+   <property name="linePosition">
+    <enum>ButtonGroup::LinePosition_Bottom</enum>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>136</red>
+     <green>138</green>
+     <blue>133</blue>
+    </color>
+   </property>
+   <property name="btnNormalColor">
+    <color>
+     <red>46</red>
+     <green>52</green>
+     <blue>54</blue>
+    </color>
+   </property>
+   <property name="btnHoverColor">
+    <color>
+     <red>102</red>
+     <green>102</green>
+     <blue>102</blue>
+    </color>
+   </property>
+   <property name="btnDarkColor">
+    <color>
+     <red>111</red>
+     <green>122</green>
+     <blue>126</blue>
+    </color>
+   </property>
+   <property name="textNormalColor">
+    <color>
+     <red>243</red>
+     <green>243</green>
+     <blue>243</blue>
+    </color>
+   </property>
+   <property name="textHoverColor">
+    <color>
+     <red>245</red>
+     <green>121</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="textDarkColor">
+    <color>
+     <red>136</red>
+     <green>138</green>
+     <blue>133</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>80</y>
+     <width>261</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>550</y>
+     <width>71</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="toolLayout">
+    <item>
+     <widget class="SwitchButton" name="Modelswitch">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="space">
+       <number>2</number>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="showCircle">
+       <bool>false</bool>
+      </property>
+      <property name="animation">
+       <bool>true</bool>
+      </property>
+      <property name="buttonStyle">
+       <enum>SwitchButton::ButtonStyle_CircleIn</enum>
+      </property>
+      <property name="bgColorOff">
+       <color>
+        <red>46</red>
+        <green>52</green>
+        <blue>54</blue>
+       </color>
+      </property>
+      <property name="bgColorOn">
+       <color>
+        <red>46</red>
+        <green>52</green>
+        <blue>54</blue>
+       </color>
+      </property>
+      <property name="sliderColorOff">
+       <color>
+        <red>4</red>
+        <green>241</green>
+        <blue>246</blue>
+       </color>
+      </property>
+      <property name="sliderColorOn">
+       <color>
+        <red>4</red>
+        <green>241</green>
+        <blue>246</blue>
+       </color>
+      </property>
+      <property name="textOff">
+       <string>轮听</string>
+      </property>
+      <property name="textOn">
+       <string>监听</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeProgress</class>
+   <extends>QWidget</extends>
+   <header>gaugeprogress.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NavLabel</class>
+   <extends>QLabel</extends>
+   <header>navlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ButtonGroup</class>
+   <extends>QWidget</extends>
+   <header>buttongroup.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>switchbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CpuMemoryLabel</class>
+   <extends>QLabel</extends>
+   <header>cpumemorylabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PanelItem</class>
+   <extends>QWidget</extends>
+   <header>panelitem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

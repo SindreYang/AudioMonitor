@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainui</class>
+ <widget class="PanelItem" name="mainui">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="titleText" stdset="0">
+   <string>音频监测</string>
+  </property>
+  <property name="isAlarm" stdset="0">
+   <bool>false</bool>
+  </property>
+  <layout class="QHBoxLayout" name="mainuiLayout" stretch="3,1">
+   <property name="topMargin">
+    <number>35</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gL" columnstretch="4,4,4,4">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>4</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>2</number>
+     </property>
+     <item row="1" column="3">
+      <widget class="NavLabel" name="group_label_4">
+       <property name="text">
+        <string>分类组4</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <layout class="QHBoxLayout" name="group_6"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="NavLabel" name="group_label_7">
+       <property name="text">
+        <string>分类组7</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="group_5"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="NavLabel" name="group_label_2">
+       <property name="text">
+        <string>分类组2</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <layout class="QHBoxLayout" name="group_4">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetFixedSize</enum>
+       </property>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="group_1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetFixedSize</enum>
+       </property>
+      </layout>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="group_2"/>
+     </item>
+     <item row="2" column="2">
+      <layout class="QHBoxLayout" name="group_3"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="NavLabel" name="group_label_6">
+       <property name="text">
+        <string>分类组6</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="NavLabel" name="group_label_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>分类组1</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="NavLabel" name="group_label_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>分类组5</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <layout class="QHBoxLayout" name="group_8"/>
+     </item>
+     <item row="5" column="2">
+      <layout class="QHBoxLayout" name="group_7"/>
+     </item>
+     <item row="3" column="3">
+      <widget class="NavLabel" name="group_label_8">
+       <property name="text">
+        <string>分类组8</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="NavLabel" name="group_label_3">
+       <property name="text">
+        <string>分类组3</string>
+       </property>
+       <property name="background" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="leftLayout">
+     <item>
+      <widget class="ButtonGroup" name="ChangeGroup" native="true">
+       <property name="interval" stdset="0">
+        <number>300</number>
+       </property>
+       <property name="lineLen" stdset="0">
+        <number>3</number>
+       </property>
+       <property name="index" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="texts" stdset="0">
+        <string>0-32;32-64;64-128</string>
+       </property>
+       <property name="lineColor" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+       <property name="btnNormalColor" stdset="0">
+        <color>
+         <red>46</red>
+         <green>52</green>
+         <blue>54</blue>
+        </color>
+       </property>
+       <property name="btnHoverColor" stdset="0">
+        <color>
+         <red>102</red>
+         <green>102</green>
+         <blue>102</blue>
+        </color>
+       </property>
+       <property name="btnDarkColor" stdset="0">
+        <color>
+         <red>111</red>
+         <green>122</green>
+         <blue>126</blue>
+        </color>
+       </property>
+       <property name="textNormalColor" stdset="0">
+        <color>
+         <red>243</red>
+         <green>243</green>
+         <blue>243</blue>
+        </color>
+       </property>
+       <property name="textHoverColor" stdset="0">
+        <color>
+         <red>245</red>
+         <green>121</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="textDarkColor" stdset="0">
+        <color>
+         <red>136</red>
+         <green>138</green>
+         <blue>133</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab1">
+        <attribute name="title">
+         <string>监视</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="tab1Layout"/>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>设置</string>
+        </attribute>
+        <layout class="QGridLayout" name="tab2Layout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="SwitchButton" name="Modelswitch" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="space" stdset="0">
+            <number>2</number>
+           </property>
+           <property name="checked" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="showCircle" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="animation" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="bgColorOff" stdset="0">
+            <color>
+             <red>46</red>
+             <green>52</green>
+             <blue>54</blue>
+            </color>
+           </property>
+           <property name="bgColorOn" stdset="0">
+            <color>
+             <red>46</red>
+             <green>52</green>
+             <blue>54</blue>
+            </color>
+           </property>
+           <property name="sliderColorOff" stdset="0">
+            <color>
+             <red>4</red>
+             <green>241</green>
+             <blue>246</blue>
+            </color>
+           </property>
+           <property name="sliderColorOn" stdset="0">
+            <color>
+             <red>4</red>
+             <green>241</green>
+             <blue>246</blue>
+            </color>
+           </property>
+           <property name="textOff" stdset="0">
+            <string>轮听</string>
+           </property>
+           <property name="textOn" stdset="0">
+            <string>监听</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="GaugeProgress" name="VolumeProgress" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="showValue" stdset="0">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="Start">
+           <property name="text">
+            <string>开始</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="Stop">
+           <property name="text">
+            <string>停止</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="Messages">
+           <property name="text">
+            <string>日志</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="Setup">
+           <property name="text">
+            <string>设置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="Graph">
+           <property name="text">
+            <string>图像化接口设置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="Patchbay">
+           <property name="text">
+            <string>列表化接口设置</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="CpuMemoryLabel" name="cpuMemorylabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeProgress</class>
+   <extends>QWidget</extends>
+   <header>gaugeprogress.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NavLabel</class>
+   <extends>QLabel</extends>
+   <header>navlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ButtonGroup</class>
+   <extends>QWidget</extends>
+   <header>buttongroup.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>switchbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CpuMemoryLabel</class>
+   <extends>QLabel</extends>
+   <header>cpumemorylabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PanelItem</class>
+   <extends>QWidget</extends>
+   <header>panelitem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
