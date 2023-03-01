@@ -241,6 +241,31 @@ bool JackClient::connectPorts(const QString &in, const QString &out)
   }
   return true;
 }
+
+bool JackClient::disconnectPorts(const QString &in, const QString &out){
+    if (!_client)
+        return false;
+
+    jack_port_t *input_port;
+    jack_port_t *output_port;
+
+    if ((input_port=jack_port_by_name(_client, in.toLatin1())) == 0) {
+        qDebug()<<"[JackClient] ERROR "<<in<<" not a valid port";
+        return 1;
+    }
+    if ((output_port=jack_port_by_name(_client, out.toLatin1())) == 0) {
+        qDebug()<<"[JackClient] ERROR "<<out<<" not a valid port\n";
+        return 1;
+    }
+
+    if (jack_disconnect(_client, jack_port_name(input_port), jack_port_name(output_port))) {
+        qDebug()<<"[JackClient] 无法断开端口链接";
+        return false;
+    }
+    return true;
+
+
+}
 jack_port_t *JackClient::getPort(QString name) 
 {
   if (!_client)

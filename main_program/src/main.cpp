@@ -1,6 +1,7 @@
 #include <QtCore>
 #include "rhdz.h"
-
+#include "ui_mainUI.h"
+#include "ui_setup.h"
 void usage(QString appname, QString error="") {
   QTextStream out(stdout);
   
@@ -20,34 +21,41 @@ int main(int argc, char *argv[])
   QFile qss(":/qss");
   qss.open(QFile::ReadOnly);
   QString st=qss.readAll();
-  qDebug()<<st;
   a.setStyleSheet(st);
   qss.close();
 
   QString name="";
-  QString arg;
-  QTextStream out(stdout); 
-      
-  for (int i=1; i < argc; i++) {
-    arg=argv[i];
-    if (arg == "-n") {
-      if (i+1 < argc) {
-	i++;
-	name=argv[i];
-      }
-      else {
-	usage(argv[0], "error: client name missing!");
-	exit(1);
-      }
-    }
-    if (arg == "-h") {
-      usage(argv[0]);
-      exit(0);
-    }
-  }
-
-
   rhdz dlg(name);
+  //dlg.setWindowFlags(Qt::FramelessWindowHint);  //去除标题栏
+  //dlg.showMaximized();//最大化
   dlg.show();
+
+//  Ui_setui t;
+//  QWidget w;
+//  t.setupUi(&w);
+//  w.show();
+
+
+  //  QString arg;
+  //  QTextStream out(stdout);
+
+  //  for (int i=1; i < argc; i++) {
+  //    arg=argv[i];
+  //    if (arg == "-n") {
+  //      if (i+1 < argc) {
+  //	i++;
+  //	name=argv[i];
+  //      }
+  //      else {
+  //	usage(argv[0], "error: client name missing!");
+  //	exit(1);
+  //      }
+  //    }
+  //    if (arg == "-h") {
+  //      usage(argv[0]);
+  //      exit(0);
+  //    }
+  //  }
+
   return a.exec();
 }

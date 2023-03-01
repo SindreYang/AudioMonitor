@@ -94,6 +94,7 @@ public:
   QString getName(){return _name;}
 
 
+
   //
   // ports
   //
@@ -111,6 +112,7 @@ public:
   QList<QString> getWritablePorts(QString scheme=QString(""));
   QList<QString> getConnections(QString);
   bool connectPorts(const QString &in, const QString &out);
+  bool disconnectPorts(const QString &in, const QString &out);
   void connectionsFromXML(QDomElement root);
   QDomElement connectionsToXML();
 

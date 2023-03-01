@@ -4,12 +4,11 @@
 #define LIBQJACK_H
 
 #include "jack2_sever/jack_client.h"
-#include "qt_module/midi/midi_widgets.h"
-#include "qt_module/other/audio_tools.h"
-#include "algorithms_sever/presetbox.h"
-#include "algorithms_sever/osc.h"
-#include "qt_module/Integration/qv.h"
-
+#include "qt_module/midi_widgets.h"
+#include "algorithms_sever/audio_tools.h"
+#include "qt_module/volume_meter.h"
+#include "qt_module/vumeter.h"
+#include "qt_module/control_meter.h"
 #endif
 
 /* libqjack.h ends here */
